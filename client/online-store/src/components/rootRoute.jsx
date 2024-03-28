@@ -50,7 +50,7 @@ const routeData = [
                 path: "*",
                 element: <h1>Not found</h1>,
                 children: [],
-                Header: "Contact us Page",
+                Header: "Not found page",
             },
         ],
     },

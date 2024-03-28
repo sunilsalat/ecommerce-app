@@ -15,7 +15,7 @@ const ListingPage = () => {
                         <div className={style.childContainer} key={item.id}>
                             <div
                                 onClick={() => {
-                                    navigate(`/detail/${item.id}`);
+                                    navigate(`/detail/${item.id}?a=b`);
                                 }}
                             >
                                 {item.name} - {item.email}
