@@ -1,6 +1,6 @@
 import { BaseError } from "./baseError";
 
-export class BadError extends BaseError {
+export class BadRequest extends BaseError {
     statusCode = 400;
     constructor(message: string) {
         super(message);

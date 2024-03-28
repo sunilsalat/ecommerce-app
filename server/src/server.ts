@@ -1,6 +1,14 @@
 import { app } from "./app";
 import mongoose from "mongoose";
 
+declare global {
+    namespace Express {
+        interface Request {
+            user?: any;
+        }
+    }
+}
+
 const start = async () => {
     try {
         mongoose.connect("mongodb://localhost:27017/practice");
